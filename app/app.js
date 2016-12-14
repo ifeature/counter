@@ -25,8 +25,8 @@
       .state('timer.counter', {
         url: '/counter',
         resolve: {
-          counter(CounterResource) {
-            return CounterResource.getValue();
+          counter(CounterService) {
+            return CounterService.getValue();
           }
         },
         component: 'counter'
